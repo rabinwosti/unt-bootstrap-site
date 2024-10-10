@@ -1,0 +1,140 @@
+/* General Enhancements */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f9;
+    transition: background-color 0.3s ease;
+}
+
+h1, h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Navbar Enhancements */
+.navbar {
+    background-color: #343a40;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #fff !important;
+}
+
+    .navbar-brand:hover {
+        color: #007bff !important;
+    }
+
+.nav-link {
+    color: #fff !important;
+    transition: color 0.3s ease-in-out;
+}
+
+    .nav-link:hover {
+        color: #ff4081 !important;
+    }
+
+/* Hero Section */
+section.bg-primary {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    padding: 100px 0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+    section.bg-primary h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+        animation: fadeInDown 1s ease;
+    }
+
+    section.bg-primary p {
+        font-size: 1.4rem;
+        margin-top: 10px;
+        animation: fadeInUp 1.2s ease;
+    }
+
+    section.bg-primary a {
+        margin-top: 20px;
+        padding: 10px 30px;
+        background-color: #fff;
+        color: #6a11cb;
+        font-size: 1.2rem;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+        section.bg-primary a:hover {
+            background-color: #ff4081;
+            color: #fff;
+        }
+
+/* Add CSS Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Project Card Hover Effects */
+.card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .card img {
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover img {
+        transform: scale(1.1);
+    }
+
+/* Smooth Section Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Footer Enhancements */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+    footer p {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+/* Back to Top Button Styles */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    padding: 10px 15
